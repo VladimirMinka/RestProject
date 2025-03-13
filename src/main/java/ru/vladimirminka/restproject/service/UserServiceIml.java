@@ -23,4 +23,20 @@ public class UserServiceIml implements UserService {
     public List<User> getAllByAgeGreaterValue(int age) {
         return repository.findByAge(age);
     }
+
+    @Override
+    public List<User> getName(String name) {
+        return repository.findByName(name);
+
+    }
+
+    @Override
+    public Long findByCountAge(int age) {
+        return repository.findByCountAge(age);
+    }
+
+    @Override
+    public User getByEmail(String email) {
+        return repository.findByEmail(email);
+    }
 }

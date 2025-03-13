@@ -8,6 +8,13 @@ public interface UserService {
 
     User create(User user);
 
-    List<User> getAllByAgeGreaterValue(int age) ;
+    List<User> getAllByAgeGreaterValue(int age);
+
+    List<User> getName(String name);
+
+    Long findByCountAge(int age);
+
+    User getByEmail(String email);
+
 
 }
